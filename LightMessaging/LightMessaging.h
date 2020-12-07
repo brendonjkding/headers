@@ -6,8 +6,10 @@
 #include <sandbox.h>
 #endif
 
+#if !(TARGET_OS_SIMULATOR)
 #ifndef LIGHTMESSAGING_USE_ROCKETBOOTSTRAP
 #define LIGHTMESSAGING_USE_ROCKETBOOTSTRAP 1
+#endif
 #endif
 
 #ifndef LIGHTMESSAGING_TIMEOUT
